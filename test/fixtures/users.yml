@@ -1,4 +1,15 @@
 michael:
+  id: 1
   name: Michael Example
   email: michael@example.com
   password_digest: <%= User.digest('password') %>
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+
+archer:
+  id: 2
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
