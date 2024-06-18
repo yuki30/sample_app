@@ -25,3 +25,12 @@ production:
   adapter: postgresql
   encoding: unicode
   url: <%= ENV['DATABASE_URL'] %>
+# config/database.yml.ci
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_app_test
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
