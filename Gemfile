@@ -26,7 +26,12 @@ group :development do
   gem "irb",                 "1.10.0"
   gem "repl_type_completor", "0.1.2"
 end
+group :production do
+  gem "pg", "1.3.5"
+end
 
+# Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
+# gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :test do
   gem "capybara",                 "3.38.0"
   gem "selenium-webdriver",       "4.8.3"
